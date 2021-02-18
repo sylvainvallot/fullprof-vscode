@@ -10,15 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:fullprof-vscode.helloWorld",
-		"onLanguage:fullprof-vscode.hover"
+		"onCommand:fullprof-vscode.hello"
 	],
 	"main": "./extension.js",
 	"contributes": {
 
 		"commands": [
 			{
-				"command": "fullprof-vscode.helloWorld",
+				"command": "fullprof-vscode.hello",
 				"title": "FullProf in VSCode"
 			}
 		],
