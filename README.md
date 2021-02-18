@@ -16,14 +16,14 @@ The screenshots were made using default Visual Studio Code dark theme, colors ca
 
 Comments are separated from numerical values
 
-![alt](image/highlight.png)
+![comment highlight](https://github.com/sylvainvallot/fullprof-vscode/blob/main/image/highlight.png)
 
 
 #### Numerical value highlight
 
 Refinable paramaters code stand out from refined values. Error like `NaN` are also highlighted.
 
-![alt](image/refined_parameters.png)
+![numerical value hightlight](https://github.com/sylvainvallot/fullprof-vscode/blob/main/image/refined_parameters.png)
 
 
 #### FullProf Documentation
@@ -33,7 +33,8 @@ The documentation is not activated at launch, in order to access it, do the foll
 2. Then type `FullProf in VSCode`
 
 The documentation is now available by hovering the parameter in the comment line.
-![alt](image/hover.png)
+
+![alt](https://github.com/sylvainvallot/fullprof-vscode/blob/main/image/hover.png)
 
 ## Known Issues
 
