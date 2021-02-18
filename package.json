@@ -1,0 +1,59 @@
+{
+	"name": "fullprof-vscode",
+	"displayName": "fullprof-vscode",
+	"description": "FullProf support in VSCode",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:fullprof-vscode.helloWorld",
+		"onLanguage:fullprof-vscode.hover"
+	],
+	"main": "./extension.js",
+	"contributes": {
+
+		"commands": [
+			{
+				"command": "fullprof-vscode.helloWorld",
+				"title": "FullProf in VSCode"
+			}
+		],
+		"languages": [
+			{
+				"id":"fullprof",
+				"extensions": [
+					".pcr",
+					".new"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "fullprof",
+				"scopeName": "source.fullprof",
+				"path": "./syntaxes/fullprof.tmLanguage.json"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.53.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	}
+}
